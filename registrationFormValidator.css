@@ -1,0 +1,74 @@
+:root {
+  --error-color: #c40c1e;
+  --success-color: #bcf5e4;
+  --warning-color: #ffc107;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgba(243, 247, 246, 0.918);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  margin: 0;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: grey;
+}
+
+form {
+  padding: 40px;
+}
+
+.form h1 {
+  text-align: center;
+  margin: 10px;
+  color: black;
+}
+
+.field {
+  margin-bottom: 5px;
+}
+
+.field input {
+  margin-bottom: 5px;
+  width: 100%;
+  border-radius: 5px;
+  height: 30px;
+  border-color: lightgray;
+  border-style: solid;
+  display: block;
+  color: grey;
+}
+.field.error input {
+  border-color: var(--error-color);
+}
+
+.field.success input {
+  border-color: var(--success-color);
+  color: black;
+}
+
+.field.error small {
+  color: var(--error-color);
+}
+
+.container {
+  background: white;
+  width: 350px;
+  height: auto;
+  box-shadow: wheat;
+  border-radius: 10%;
+}
+
+#submit {
+  background: #5fc4d4;
+  color: aliceblue;
+}
